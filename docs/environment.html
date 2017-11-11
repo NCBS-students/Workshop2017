@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Environmental Setup</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Workshop17</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="https://goo.gl/N4ogkF">Suggest</a></li>
+                <li><a href="#">Environmental Setup</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="https://goo.gl/N4ogkF">Suggest</a></li>
+                <li><a href="#">Environmental Setup</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <h4>Environmental Setup</h4>
+                For our hands on session, we recommend you to get your own laptop. However if you don't know access to laptop, you can still
+                follow along with one of our volunteers. You can check out all the codes used in this workshop on our
+                <a href="https://github.com/NCBS-students/Workshop2017" target="_blank">GitHub </a> repository which you
+                can always try out later on. This page contains environmental setup for most common operating systems, however
+                if you use any other operating system, please get in touch with
+                <a href="contact.html">us</a> so that we can guide you accordingly. If you have no prior experience, we highly
+                recommend using Python.
+            </div>
+        </div>
+        <div class="section">
+            <h4>Python</h4>
+            We will use Python 3.6.3. For easier coding experience you can additionally install python IDE like <a href="https://www.jetbrains.com/pycharm/download/"
+                target="_blank">PyCharm Community Edition</a>, <a href="https://atom.io/" target="_blank">Atom</a>,
+            <a href="https://www.sublimetext.com/" target="_blank">SublimeText 3</a>.
+            <h5>Windows</h5>
+            If you don't have python installed on your system, you should install <a href="https://www.anaconda.com/download/"
+                target="_blank">Anaconda</a> instead
+            <a href="https://www.python.org/downloads/" target="_blank">official</a> python binary. It comes with all the
+            standard libraries which you will need in most of the analysis.
+            <h5>Ubuntu\Linux</h5>
+            Generally ubuntu\linux will come with pre installed python. You can check which version of python is installed by running
+            following command in terminal
+            <blockquote>
+                python3 --version
+            </blockquote>
+            If you don't have Python 3+ installed on your system, you can install it by following command
+            <blockquote>
+                sudo apt-get install python3.6
+            </blockquote>
+            If you are unable to install it, please follow <a href="http://docs.python-guide.org/en/latest/starting/install3/linux/"
+                target="_blank">this</a> tutorial.
+            <h5>Mac OS</h5>
+            Mac OS X, Sierra will come with Python 2 pre installed. However for our hands on session you need to install Python 3+. Please
+            follow <a href="http://docs.python-guide.org/en/latest/starting/install3/osx/#install3-osx" target="_blank">this</a>            detailed tutorial to install python 3.
+        </div>
+
+        <div class="section">
+            <h4>R</h4>
+            We will use R version 3.4.2 in our hands on sessions. For easier coding experience you can additionally install
+            <a href="https://www.rstudio.com/products/rstudio/download/" target="_blank">RStudio</a>.
+            <h5>Windows</h5>
+            Download binary from <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">CRAN</a> website
+            and install it as an administrator.
+            <h5>Ubuntu\Linux</h5>
+            You need to add CRAN minor to your source list. Add following entry in your /etc/apt/sources.list file
+            <blockquote>
+                deb https://https://ftp.iitm.ac.in/cran/bin/linux/ubuntu artful/
+            </blockquote>
+            Now you can install R by using following commands.
+            <blockquote>
+                sudo apt-get update <br> sudo apt-get install r-base
+            </blockquote>
+            If you encounter any problem, check <a href="https://cran.r-project.org/bin/linux/ubuntu/README.html" target="_blank">this</a>            blog post.
+            <h5>Mac OS</h5>
+            Please follow instructions given on <a href="http://cran.us.r-project.org/" target="_blank">official</a> webpage.
+
+        </div>
+
+        <div class="section">
+            <h4>MatLab</h4>
+            MatLab is not free software, hence please refer to their <a href="https://in.mathworks.com/products/matlab.html" target="_blank">official</a> website for downloading instructions. 
+            If you are using NCBS/InStem/CCAMP official laptop, you can contact IT section (ithelp@ncbs.res.in) and ask them to install MatLab for you. You can always try trial version from official website, or you can also install 
+            <a href="https://www.gnu.org/software/octave/" target="_blank">Octave</a> which is open source free alternative of MatLab. 
+        </div>
+
+        <div class="section">
+                If you face any problem setting up environment, you can always contact <a href="contact.html">us</a> and we will help you.
+            </div>
+    </div>
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
