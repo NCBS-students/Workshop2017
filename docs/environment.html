@@ -41,49 +41,62 @@
         <div class="section">
             <div class="row">
                 <h4>Environmental Setup</h4>
-                For our hands on session, we recommend you to get your own laptop. However if you don't know access to laptop, you can still
-                follow along with one of our volunteers. You can check out all the codes used in this workshop on our
+                For our hands on session, we recommend you to get your own laptop. However if you don't know access to laptop, you can still follow along with one of our volunteers. You can check out all the codes used in this workshop on our
                 <a href="https://github.com/NCBS-students/Workshop2017" target="_blank">GitHub </a> repository which you
                 can always try out later on. This page contains environmental setup for most common operating systems, however
                 if you use any other operating system, please get in touch with
-                <a href="contact.html">us</a> so that we can guide you accordingly. If you have no prior experience, we highly
-                recommend using Python.
+                <a href="contact.html">us</a> so that we can guide you accordingly. If you have no prior experience, we recommend using Python.
             </div>
         </div>
         <div class="section">
             <h4>Python</h4>
             We will use Python 3.6.3. For easier coding experience you can additionally install python IDE like <a href="https://www.jetbrains.com/pycharm/download/"
                 target="_blank">PyCharm Community Edition</a>, <a href="https://atom.io/" target="_blank">Atom</a>,
-            <a href="https://www.sublimetext.com/" target="_blank">SublimeText 3</a>.
+            <a href="https://www.sublimetext.com/" target="_blank">SublimeText 3</a>. For scientific computing, we recommend using jupyter notebook, which allows combining narrative text and equations with live code and data visualization plots (<a href="https://jupyter.org/" target="_blank">Jupyter notebook</a>).
+
             <h5>Windows</h5>
             If you don't have python installed on your system, you should install <a href="https://www.anaconda.com/download/"
                 target="_blank">Anaconda</a> instead
             <a href="https://www.python.org/downloads/" target="_blank">official</a> python binary. It comes with all the
-            standard libraries which you will need in most of the analysis.
+            standard libraries which you will need in most of the analysis. This also comes with jupyter notebook, and is the easiest way to install python and all other scientific computing libraries.
             <h5>Ubuntu\Linux</h5>
-            Generally ubuntu\linux will come with pre installed python. You can check which version of python is installed by running
-            following command in terminal
+            Generally ubuntu\linux will come with pre installed python. You can check which version of python is installed by running following command in terminal
             <blockquote>
                 python3 --version
             </blockquote>
             If you don't have Python 3+ installed on your system, you can install it by following command
             <blockquote>
-                sudo apt-get install python3.6
+                sudo -E apt-get install python3.6
             </blockquote>
             If you are unable to install it, please follow <a href="http://docs.python-guide.org/en/latest/starting/install3/linux/"
                 target="_blank">this</a> tutorial.
+
+            Additionally, install jupyter notebook using the following commands (in the terminal):
+            <blockquote>
+                sudo -EH pip3 install --upgrade pip
+                <br>
+                sudo -EH pip3 install jupyter
+            </blockquote>
+            To run jupyter notebook, open up a terminal and run:
+            <blockquote>
+                jupyter notebook
+            </blockquote>
+            The notebook should open up in your favorite browser.
+
             <h5>Mac OS</h5>
             Mac OS X, Sierra will come with Python 2 pre installed. However for our hands on session you need to install Python 3+. Please
-            follow <a href="http://docs.python-guide.org/en/latest/starting/install3/osx/#install3-osx" target="_blank">this</a>            detailed tutorial to install python 3.
+            follow <a href="http://docs.python-guide.org/en/latest/starting/install3/osx/#install3-osx" target="_blank">this</a> detailed tutorial to install python 3. Once python 3 is installed, you can run the same linux commands (above) to install jupyter notebook.
+
+            Another way of installing python3 in Mac OS might be to use anaconda, similar to windows. Download and and install from <a href="https://www.anaconda.com/download/#download" target="_blank">here</a>.
         </div>
 
         <div class="section">
             <h4>R</h4>
-            We will use R version 3.4.2 in our hands on sessions. For easier coding experience you can additionally install
+            We will use R version 3.4.2 in our hands on sessions. For easier coding experience it is recommended that you install
             <a href="https://www.rstudio.com/products/rstudio/download/" target="_blank">RStudio</a>.
             <h5>Windows</h5>
             Download binary from <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">CRAN</a> website
-            and install it as an administrator.
+            and install it as an administrator. Once r is install, install R studio from the download site.
             <h5>Ubuntu\Linux</h5>
             You need to add CRAN minor to your source list. Add following entry in your /etc/apt/sources.list file
             <blockquote>
@@ -93,17 +106,38 @@
             <blockquote>
                 sudo apt-get update <br> sudo apt-get install r-base
             </blockquote>
-            If you encounter any problem, check <a href="https://cran.r-project.org/bin/linux/ubuntu/README.html" target="_blank">this</a>            blog post.
+            If you encounter any problem, check <a href="https://cran.r-project.org/bin/linux/ubuntu/README.html" target="_blank">this</a> blog post. Once r is install, install R studio from the download site.
             <h5>Mac OS</h5>
-            Please follow instructions given on <a href="http://cran.us.r-project.org/" target="_blank">official</a> webpage.
+            Please follow instructions given on <a href="http://cran.us.r-project.org/" target="_blank">official</a> webpage. Once r is install, install R studio from the download site.
 
         </div>
 
         <div class="section">
-            <h4>MatLab</h4>
-            MatLab is not free software, hence please refer to their <a href="https://in.mathworks.com/products/matlab.html" target="_blank">official</a> website for downloading instructions. 
-            If you are using NCBS/InStem/CCAMP official laptop, you can contact IT section (ithelp@ncbs.res.in) and ask them to install MatLab for you. You can always try trial version from official website, or you can also install 
-            <a href="https://www.gnu.org/software/octave/" target="_blank">Octave</a> which is open source free alternative of MatLab. 
+            <h4>MATLAB / GNU Octave</h4>
+            MATLAB is not free software, hence please refer to their <a href="https://in.mathworks.com/products/matlab.html" target="_blank">official</a> website for downloading instructions.
+            If you are using NCBS/InStem/CCAMP official laptop, you can contact IT section (ithelp@ncbs.res.in) and ask them to install MATLAB for you. You can always try trial version from official website for the duration of the workshop.
+
+            An open source alternative for MATLAB is <a href="https://www.gnu.org/software/octave/" target="_blank"> GNU Octave</a>, which has similar commands and similar GUI as MATLAB.
+
+            <h5>Windows</h5>
+            To install GNU octave in windows, simply download and run the exe file from <a href="https://www.gnu.org/software/octave/" target="_blank"> here </a>.
+
+            <h5>Ubuntu / Linux</h5>
+            To install GNU octave in windows, open up a terminal and run:
+            <blockquote>
+                sudo -E apt-get install octave
+            </blockquote>
+
+            <h5>Mac OS</h5>
+            Using package managers like  <a href="https://brew.sh/" target="_blank">homebrew</a> might be the easiest approach. Once you install homebrew you simply have to open up a terminal and
+            <blockquote>
+                brew install octave
+            </blockquote>
+            (not tested. You might have to give super user access). Read more about installing Octave on Mac Os <a href="https://wiki.octave.org/Octave_for_macOS" target="_blank">here</a>.
+
+
+
+
         </div>
 
         <div class="section">
