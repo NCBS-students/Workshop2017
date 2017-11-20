@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Course Material</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo">Workshop17</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="schedule.html">Schedule</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/N4ogkF">Suggest</a>
+                </li>
+                <li>
+                    <a href="environment.html">Environmental Setup</a>
+                </li>
+                <li>
+                    <a href="material.html">Course Material</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li>
+                    <a href="schedule.html">Schedule</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/N4ogkF">Suggest</a>
+                </li>
+                <li>
+                    <a href="environment.html">Environmental Setup</a>
+                </li>
+                <li>
+                    <a href="material.html">Course Material</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+        </div>
+    </div>
+
+
+
+    <body>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <h4>Day 1</h4>
+                    Python is space/indentation sensitive. Be careful while using indentation. We recommend you to use 4 spaces while using any
+                    kind of indentation.Every statement should be in separate line (in reality you can divide statement to
+                    fit in multiple lines but for now, use thumb of rule as one statement per line). We learned following
+                    things in python.
+                    <h5>print</h5>
+                    Used in printing any kind of data within program.
+                    <blockquote>
+                        print("hello there!")
+                    </blockquote>
+                    <h5>Variables</h5>
+                    Used in storing any kind of data. You should NOT use numbers are variable names.
+                    <blockquote>
+                        my_int_variable = 1
+                        <br> my_string_variable = "Some Text"
+                        <br> my_boolean_variable = True
+                        <br> my_list = [2,3,4]
+                    </blockquote>
+                    <h5>For loop</h5>
+                    For loop used in iterating over each element in your list.
+                    <blockquote>
+                        my_list = [2,3,4,5]
+                        <br> for element in my_list:
+                        <br> &emsp;&emsp; print(element)
+                    </blockquote>
+                    Above program will print following output,
+                    <blockquote>
+                        2
+                        <br> 3
+                        <br> 4
+                        <br> 5
+                    </blockquote>
+                    <h5>Conditions</h5>
+                    You can use conditions to compare two elements
+                    <blockquote>
+                        my_list = [2,3,4,5]
+                        <br> for element in my_list:
+                        <br> &emsp;&emsp; if element > 3:
+                        <br> &emsp;&emsp;&emsp;&emsp; print(str(element) + " is greater than 3.")
+                        <br> &emsp;&emsp; else if element == 3:
+                        <br> &emsp;&emsp;&emsp;&emsp; print("It is 3.")
+                        <br> &emsp;&emsp; else:
+                        <br> &emsp;&emsp;&emsp;&emsp; print(str(element) + " is less than 3.")
+                    </blockquote>
+                    Above program will print following output,
+                    <blockquote>
+                        2 is less than 3.
+                        <br> It is 3.
+                        <br> 4 is greater than 3.
+                        <br> 5 is greater than 3.
+                    </blockquote>
+                    <h5>Exercise Examples</h5>
+                    Find the maximum number from the list. <br>
+                    Find the first 100 prime numbers 
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    </div>
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
