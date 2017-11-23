@@ -1,901 +1,127 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="generator" content="MATLAB R2016a">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1">
-    <title>Day - 1</title>
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            text-align: start;
-            line-height: 17.234001159668px;
-            min-height: 0px;
-            white-space: normal;
-            color: rgb(0, 0, 0);
-            font-family: Consolas, Inconsolata, Menlo, monospace;
-            font-style: normal;
-            font-size: 14px;
-            font-weight: normal;
-            text-decoration: none;
-            white-space: normal;
-        }
-
-        h1,
-        h2 {
-            font-weight: normal;
-        }
-
-        .content {
-            padding: 30px;
-        }
-
-        .S0 {
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 0px;
-        }
-
-        .S1 {
-            line-height: 26.3999996185303px;
-            min-height: 24px;
-            white-space: pre-wrap;
-            color: rgb(213, 80, 0);
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 22px;
-            white-space: pre-wrap;
-            margin-left: 4px;
-            margin-top: 3px;
-            margin-bottom: 15px;
-            margin-right: 10px;
-        }
-
-        .S2 {
-            min-height: 0px;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 0px;
-        }
-
-        .S3 {
-            line-height: 20.576000213623px;
-            min-height: 20px;
-            white-space: pre-wrap;
-            color: rgb(60, 60, 60);
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 16px;
-            font-weight: bold;
-            white-space: pre-wrap;
-            margin-left: 4px;
-            margin-top: 15px;
-            margin-bottom: 9px;
-            margin-right: 10px;
-        }
-
-        .S4 {
-            margin-left: 3px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-right: 3px;
-        }
-
-        .S5 {
-            line-height: 15.5926675796509px;
-            min-height: 18px;
-            white-space: nowrap;
-            font-size: 12.6666669845581px;
-            white-space: nowrap;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 0px;
-        }
-
-        .S6 {
-            line-height: 15.5926685333252px;
-            min-height: 0px;
-            white-space: pre;
-            font-size: 12.6666679382324px;
-            white-space: pre;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 0px;
-        }
-
-        .S7 {
-            line-height: 15.5926685333252px;
-            min-height: 0px;
-            white-space: pre;
-            color: rgb(34, 139, 34);
-            font-size: 12.6666679382324px;
-            white-space: pre;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 45px;
-        }
-
-        .S8 {
-            color: rgb(64, 64, 64);
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 0px;
-        }
-
-        .S9 {
-            line-height: 15.5926685333252px;
-            min-height: 0px;
-            white-space: pre;
-            font-size: 12.6666679382324px;
-            white-space: pre;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 45px;
-        }
-
-        .S10 {
-            line-height: 15.5926685333252px;
-            min-height: 0px;
-            white-space: pre;
-            color: rgb(160, 32, 240);
-            font-size: 12.6666679382324px;
-            white-space: pre;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 0px;
-        }
-
-        .S11 {
-            margin-left: 3px;
-            margin-top: 10px;
-            margin-bottom: 4px;
-            margin-right: 3px;
-        }
-
-        .S12 {
-            line-height: 15.5926685333252px;
-            min-height: 0px;
-            white-space: pre;
-            color: rgb(0, 0, 255);
-            font-size: 12.6666679382324px;
-            white-space: pre;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 0px;
-        }
-
-        .S13 {
-            line-height: 15.5926685333252px;
-            min-height: 0px;
-            white-space: pre;
-            color: rgb(0, 0, 255);
-            font-size: 12.6666679382324px;
-            white-space: pre;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: 45px;
-        }
-
-        .LineNodeBlock {
-            margin: 10px 0 10px 0;
-        }
-
-        .LineNodeBlock+.paragraphNode {
-            margin-top: 10px;
-        }
-
-        .lineNode {
-            padding-left: 10px;
-            background-color: #F7F7F7;
-            border-left: 1px solid #E9E9E9;
-            border-right: 1px solid #E9E9E9;
-        }
-
-        .inlineWrapper:first-child .lineNode,
-        .inlineWrapper.outputs+.inlineWrapper .lineNode {
-            padding-top: 5px;
-            border-top: 1px solid #E9E9E9;
-        }
-
-        .inlineWrapper:last-child .lineNode,
-        .inlineWrapper.outputs .lineNode {
-            padding-bottom: 5px;
-            border-bottom: 1px solid #E9E9E9;
-        }
-
-        .lineNode .textBox {
-            white-space: pre;
-        }
-
-        .outputGroup {
-            margin: 2px 0 2px 0;
-            padding: 2px 2px 2px 4px;
-        }
-
-        .outputRegion {}
-
-        .outputParagraph {
-            color: rgba(64, 64, 64, 1);
-            padding: 10px 0 6px 17px;
-            background: white;
-            overflow-x: hidden;
-        }
-
-        .inlineWrapper:last-child .outputParagraph {
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-        }
-
-        .outputParagraph:empty {
-            margin: 0;
-        }
-
-        .inlineElement .symbolicElement {
-            margin-top: 1px;
-            margin-bottom: 1px;
-        }
-
-        .embeddedOutputsSymbolicElement .MathEquation {
-            margin-top: 4px;
-            margin-bottom: 4px;
-        }
-
-        .embeddedOutputsSymbolicElement .MathEquation.displaySymbolicElement {
-            margin-left: 15px;
-        }
-
-        .embeddedOutputsSymbolicElement .MathEquation.inlineSymbolicElement {
-            margin-left: 5px;
-        }
-
-        .embeddedOutputsSymbolicElement {
-            overflow-x: auto;
-            overflow-y: hidden;
-        }
-
-        .embeddedOutputsSymbolicElement {
-            overflow: initial !important;
-        }
-
-        .embeddedOutputsTextElement,
-        .embeddedOutputsVariableStringElement {
-            font-family: Consolas, Inconsolata, Menlo, monospace;
-            font-size: 12px;
-            white-space: pre;
-            word-wrap: initial;
-            min-height: 18px;
-            max-height: 250px;
-            overflow: auto;
-        }
-
-        .textElement {
-            padding-top: 3px;
-        }
-
-        .embeddedOutputsTextElement.inlineElement,
-        .embeddedOutputsVariableStringElement.inlineElement {}
-
-        .inlineElement .textElement {}
-
-        .embeddedOutputsTextElement,
-        .embeddedOutputsVariableStringElement {
-            max-height: none !important;
-            overflow: initial !important;
-        }
-
-        .veSpecifier {}
-
-        .veContainer {}
-
-        .veSpecifierBox {
-            height: 400px;
-            width: 500px;
-        }
-
-        .veSpecifier .veTable {
-            padding-top: 3px;
-            padding-bottom: 4px;
-        }
-
-        .veSpecifierBox .veSpecifier .veContainer {
-            position: relative;
-            width: 100%;
-            height: 370px;
-        }
-
-        .veSpecifierBox .dijitDialogPaneContent {
-            width: 97% !important;
-            height: 88% !important;
-        }
-
-        .veSpecifier .veTable .rowHeadersWrapper {
-            padding-bottom: 0;
-        }
-
-        .veSpecifier .veTable .scroller .variableEditorRenderers {
-            padding-right: 3px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
-
-        .veVariableValueSummary {
-            display: inline-block;
-        }
-
-        .veSpecifier .veTable .topHeaderWrapper,
-        .veSpecifier .veTable .bottomRowHeaderWrapper {
-            visibility: hidden;
-            z-index: 0;
-        }
-
-        .veMetaSummary {
-            font-style: italic;
-        }
-
-        .veSpecifier .veTable .scroller {
-            overflow: hidden;
-        }
-
-        .veSpecifier .veTable:hover .scroller {
-            overflow: auto;
-        }
-
-        .veSpecifier .veVariableName,
-        .veSpecifier .veDimensionFont {
-            font-family: Consolas, Inconsolata, Menlo, monospace;
-            font-size: 12px;
-        }
-
-        .veSpecifier .veVariableName {
-            padding-top: 2px;
-        }
-
-        .veSpecifier .veDimensionFont {
-            font-style: italic;
-            color: #9A9A9A;
-        }
-
-        .veSpecifier .scroller::-webkit-scrollbar-track {
-            background-color: white;
-        }
-
-        .veSpecifier .scroller::-webkit-scrollbar-corner {
-            background-color: white;
-        }
-
-        .veSpecifier .veTable .topRowHeaderWrapper {
-            border: none;
-            background-color: #F8F9FA;
-        }
-
-        .veSpecifier .mw_type_ListBase.showCellBorders,
-        .veSpecifier .veTable .topHeaderWrapper,
-        .veSpecifier .veTable .bottomRowHeaderWrapper,
-        .veSpecifier .veTable .verticalScrollSpacer,
-        .veSpecifier .veTable .horizontalScrollSpacer {
-            border: none;
-        }
-
-        .veSpecifier .veTable .dataScrollerNode {
-            border: 1px solid #BFBFBF;
-        }
-
-        .veSpecifier .veTable .columnHeaderNode,
-        .veSpecifier .veTable .rowHeaderNode,
-        .veSpecifier .veTable .dataBody {
-            font-family: Arial;
-            font-size: 13px;
-        }
-
-        .veSpecifier .veTable .columnHeaderNode,
-        .veSpecifier .veTable .rowHeaderNode {
-            color: #7F7F7F;
-        }
-
-        .veSpecifier .veTable .dataBody {
-            color: #000000;
-        }
-
-        .veSpecifier .veTable .columnHeaderNode .cell .drag,
-        .veSpecifier .veTable .columnHeaderNode .cell .header,
-        .veSpecifier .veTable .topHeaderWrapper,
-        .veSpecifier .veTable .bottomRowHeaderWrapper {
-            background-color: #F8F9FA;
-        }
-
-        .veSpecifier .veTable .columnHeaderNode .cell .dragBorder {
-            border-right: 1px solid #F8F9FA;
-        }
-
-        .veSpecifier .veTable .rowHeaderNode .cell {
-            padding-top: 3px;
-            text-align: center;
-            border-bottom: 1px solid #F8F9FA;
-        }
-
-        .veSpecifier .veTable .dataBody .cell .plainText {
-            text-align: right;
-        }
-
-        .veSpecifier .veTable .dataBody .row .cell {
-            border-bottom: 1px solid #E9E9E9;
-            border-right: 1px solid #E9E9E9;
-        }
-
-        .embeddedOutputsVariableElement {
-            font-family: Consolas, Inconsolata, Menlo, monospace;
-            font-size: 12px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            min-height: 18px;
-            max-height: 250px;
-            overflow: auto;
-        }
-
-        .variableElement {}
-
-        .embeddedOutputsVariableElement.inlineElement {}
-
-        .inlineElement .variableElement {}
-
-        .variableValue {
-            width: 100% !important;
-        }
-
-        .embeddedOutputsMatrixElement {
-            min-height: 18px;
-            box-sizing: border-box;
-            font-family: Consolas, Inconsolata, Menlo, monospace;
-            font-size: 12px;
-        }
-
-        .embeddedOutputsMatrixElement .matrixElement {
-            position: relative;
-        }
-
-        .matrixElement .variableValue {
-            white-space: pre;
-            display: inline-block;
-            vertical-align: top;
-            overflow: hidden;
-        }
-
-        .embeddedOutputsMatrixElement.inlineElement {}
-
-        .embeddedOutputsMatrixElement.inlineElement .topHeaderWrapper {
-            display: none;
-        }
-
-        .embeddedOutputsMatrixElement.inlineElement .veTable .body {
-            padding-top: 0 !important;
-            max-height: 100px;
-        }
-
-        .embeddedOutputsMatrixElement.inlineElement .veVariableName {
-            padding-top: 0;
-        }
-
-        .inlineElement .matrixElement {
-            max-height: 300px;
-        }
-
-        .embeddedOutputsMatrixElement .matrixElement .valueContainer {
-            white-space: nowrap;
-            padding-top: 10px;
-            margin-bottom: 3px;
-        }
-
-        .embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis.hide,
-        .embeddedOutputsMatrixElement .matrixElement .verticalEllipsis.hide {
-            display: none;
-        }
-
-        .embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis {
-            margin-bottom: -3px;
-        }
-
-        .matrixElement {
-            max-height: none !important;
-        }
-
-        .dijitTooltipDialog .dijitTooltipContainer .dijitTooltipContents .alertPlugin-alertMessage {
-            min-width: 12px;
-            max-width: 400px;
-            max-height: 300px;
-            overflow: auto;
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar {
-            width: 11px;
-            height: 11px;
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-track {
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-corner {
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {
-            border-radius: 7px;
-            background-color: rgba(0, 0, 0, 0.1);
-            border: 2px solid rgba(0, 0, 0, 0);
-            background-clip: padding-box;
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb:hover {
-            background-color: rgba(0, 0, 0, 0.2);
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        .dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb:hover {
-            background-color: rgba(0, 0, 0, 0.2);
-        }
-
-        .alertPlugin-alertLine {
-            position: absolute;
-            display: initial;
-            width: 40px;
-            text-align: right;
-            cursor: text;
-        }
-
-        .alertPlugin-onTextLine {
-            visibility: hidden;
-        }
-
-        .alertPlugin-hasTooltip .alertPlugin-warningImg,
-        .alertPlugin-hasTooltip .alertPlugin-errorImg {
-            cursor: pointer;
-        }
-
-        .alertPlugin-alertLine .alertPlugin-warningElement,
-        .alertPlugin-alertLine .alertPlugin-errorElement {
-            display: inline-block;
-            margin-right: 4px;
-        }
-
-        .alertPlugin-isStale {
-            -webkit-filter: opacity(0.4) grayscale(80%);
-            filter: opacity(0.4) grayscale(80%);
-        }
-
-        .diagnosticMessage-wrapper {
-            font-family: Consolas, Inconsolata, Menlo, monospace;
-            font-size: 12px;
-        }
-
-        .diagnosticMessage-wrapper.diagnosticMessage-warningType {
-            color: rgb(255, 100, 0);
-        }
-
-        .diagnosticMessage-wrapper.diagnosticMessage-warningType a {
-            color: rgb(255, 100, 0);
-            text-decoration: underline;
-        }
-
-        .diagnosticMessage-wrapper.diagnosticMessage-errorType {
-            color: rgb(230, 0, 0);
-        }
-
-        .diagnosticMessage-wrapper.diagnosticMessage-errorType a {
-            color: rgb(230, 0, 0);
-            text-decoration: underline;
-        }
-
-        .diagnosticMessage-wrapper .diagnosticMessage-messagePart {
-            white-space: pre-wrap;
-        }
-
-        .diagnosticMessage-wrapper .diagnosticMessage-stackPart {
-            white-space: pre;
-        }
-
-        .embeddedOutputsWarningElement {
-            min-height: 18px;
-            max-height: 250px;
-            overflow: auto;
-        }
-
-        .embeddedOutputsWarningElement.inlineElement {}
-
-        .embeddedOutputsErrorElement {
-            min-height: 18px;
-            max-height: 250px;
-            overflow: auto;
-        }
-
-        .embeddedOutputsErrorElement.inlineElement {}
-    </style>
-</head>
-
-<body>
-    <div class="content">
-        <div class='SectionBlock containment active'>
-            <h1 class="S1"><span class = "S2">Day - 1</span></h1>
-            <h2 class="S3"><span class = "S2">Variable declaration</span></h2>
-            <div class='LineNodeBlock contiguous'>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S6">a = 1             </span><span class="S7">% MATLAB automatically defines variables as double</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsVariableElement" uid="2C79C4FE" data-testid="output_0" style="width: 1528px;">
-                            <div class="variableElement">a = 1</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S9">b = 4.323</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsVariableElement" uid="5C7727FA" data-testid="output_1" style="width: 1528px;">
-                            <div class="variableElement">b = 4.3230</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S6">c = [1,2,3,4,5.5]   </span><span class="S7">% A row vector (list) of double. Dimension 1 x 5 (row, column)</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsMatrixElement" uid="51107F3F" data-testid="output_2" style="width: 1528px;">
-                            <div class="matrixElement veSpecifier">
-                                <div class="veVariableName"><span>c = </span><span class="veVariableValueSummary veMetaSummary"></span></div>
-                                <div class="valueContainer" data-layout="{&quot;columnWidth&quot;:72.5,&quot;totalColumns&quot;:5,&quot;totalRows&quot;:1,&quot;charsPerColumn&quot;:10}">
-                                    <div class="variableValue" style="width: 364.5px;"> 1.0000 2.0000 3.0000 4.0000 5.5000
-                                    </div>
-                                    <div class="horizontalEllipsis hide"></div>
-                                    <div class="verticalEllipsis hide"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S6">d = [1;2.3;3;4;5]   </span><span class="S7">% A column vector (list) of double. Dimension 5 x 1 (row, column)</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsMatrixElement" uid="DBC97F5E" data-testid="output_3" style="width: 1528px;">
-                            <div class="matrixElement veSpecifier">
-                                <div class="veVariableName"><span>d = </span><span class="veVariableValueSummary veMetaSummary"></span></div>
-                                <div class="valueContainer" data-layout="{&quot;columnWidth&quot;:72.5,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:5,&quot;charsPerColumn&quot;:10}">
-                                    <div class="variableValue" style="width: 74.5px;"> 1.0000 2.3000 3.0000 4.0000 5.0000
-                                    </div>
-                                    <div class="horizontalEllipsis hide"></div>
-                                    <div class="verticalEllipsis hide"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S7"></span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S6">e</span><span class="S6"> = </span><span class="S10">'a'</span><span class="S6">             </span><span class="S7">% Character</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsVariableStringElement" uid="494B88FB" data-testid="output_4" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">
-                                <div>e = a</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S6">f = </span><span class="S10">'string'</span><span class="S6">        </span><span class="S7">% A vector of characters</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsVariableStringElement" uid="009AB86C" data-testid="output_5" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">
-                                <div>f = string</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S7"></span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S9">g = true</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsVariableStringElement" uid="FF00D4E9" data-testid="output_6" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">
-                                <div>g = </div>
-                                <div>&nbsp;&nbsp; 1<br><br></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S9">e = false</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsVariableStringElement" uid="30AE3955" data-testid="output_7" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">
-                                <div>e = </div>
-                                <div>&nbsp;&nbsp; 0<br><br></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="S3"><span class = "S2">Print variables</span></h2>
-            <div class='LineNodeBlock contiguous'>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S7">% Print using disp</span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S9">disp(a);</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="C42E24D3" data-testid="output_8" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp; 1</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S9">disp(b);</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="3E8196A4" data-testid="output_9" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp;4.3230</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S9">disp(c);</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="A4ACB9D9" data-testid="output_10" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp;1.0000&nbsp;&nbsp;&nbsp;&nbsp;2.0000&nbsp;&nbsp;&nbsp;&nbsp;3.0000&nbsp;&nbsp;&nbsp;&nbsp;4.0000&nbsp;&nbsp;&nbsp;&nbsp;5.5000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S9">disp(d);</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="F433670A" data-testid="output_11" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp;1.0000<br>&nbsp;&nbsp;&nbsp;&nbsp;2.3000<br>&nbsp;&nbsp;&nbsp;&nbsp;3.0000<br>&nbsp;&nbsp;&nbsp;&nbsp;4.0000<br>&nbsp;&nbsp;&nbsp;&nbsp;5.0000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S9"></span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S7">% Using fprintf (%d denotes a decimal, %f denotes a float, %c denotes a charater and %s a string)</span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S6">fprintf(</span><span class="S10">'a = %d, b = %f, d = %c and e = %s'</span><span class="S9">, a, b, e, f);</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="5B717216" data-testid="output_12" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">a = 1, b = 4.323000, d =&nbsp;&nbsp; and e = string</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="S3"><span class = "S2">Conditional statements</span></h2>
-            <div class='LineNodeBlock contiguous'>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S12">if </span><span class="S9">g</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    disp(</span><span class="S10">'g is true!'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S13">end</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="22FC90B1" data-testid="output_13" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">g is true!</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S13"></span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S12">if </span><span class="S9">e</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    disp</span><span class="S6">(</span><span class="S10">'e is true'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S13">else</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    disp(</span><span class="S10">'e is false'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S13">end</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="73E2226B" data-testid="output_14" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">e is false</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S13"></span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S12">if </span><span class="S9">a==1</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    disp(</span><span class="S10">'a is one'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S13">end</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="A395E01E" data-testid="output_15" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">a is one</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S13"></span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S12">if </span><span class="S9">b ~= 1</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    disp(</span><span class="S10">'b is not one'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S13">end</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="5EE963F7" data-testid="output_16" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">b is not one</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S9"></span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S12">switch </span><span class="S9">a</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    </span><span class="S12">case </span><span class="S9">1</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">        disp(</span><span class="S10">'a is one'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    </span><span class="S12">case </span><span class="S9">0</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">        disp(</span><span class="S10">'a is zero'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">    </span><span class="S13">otherwise</span></p>
-                </div>
-                <div class='inlineWrapper'>
-                    <p class="S5 lineNode"><span class="S6">        disp(</span><span class="S10">'a is not one or zero'</span><span class="S9">);</span></p>
-                </div>
-                <div class='inlineWrapper outputs'>
-                    <p class="S5 lineNode"><span class="S13">end</span></p>
-                    <div class="outputParagraph">
-                        <div class="inlineElement embeddedOutputsTextElement" uid="5BEE6FAD" data-testid="output_17" data-width="1498" style="width: 1528px;">
-                            <div class="textElement">a is one</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="MATLAB R2016a"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><title>Day - 1</title><style type="text/css">
+* {margin: 0; padding: 0;}
+body {text-align: start; line-height: 17.234001159668px; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Consolas, Inconsolata, Menlo, monospace; font-style: normal; font-size: 14px; font-weight: normal; text-decoration: none; white-space: normal; }
+h1, h2 {font-weight: normal;}
+.content { padding: 30px; }
+
+.S0 { margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S1 { line-height: 26.3999996185303px; min-height: 24px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-size: 22px; white-space: pre-wrap; margin-left: 4px; margin-top: 3px; margin-bottom: 15px; margin-right: 10px;  }
+.S2 { min-height: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S3 { line-height: 20.576000213623px; min-height: 20px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; white-space: pre-wrap; margin-left: 4px; margin-top: 15px; margin-bottom: 9px; margin-right: 10px;  }
+.S4 { margin-left: 3px; margin-top: 10px; margin-bottom: 10px; margin-right: 3px;  }
+.S5 { line-height: 15.5926675796509px; min-height: 18px; white-space: nowrap; font-size: 12.6666669845581px; white-space: nowrap; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S6 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S7 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; color: rgb(34, 139, 34); font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S8 { color: rgb(64, 64, 64); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S9 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S10 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; color: rgb(160, 32, 240); font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S11 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; color: rgb(0, 0, 255); font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S12 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; color: rgb(0, 0, 255); font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S13 { line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px;  }
+.S14 { line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 10px; margin-bottom: 9px; margin-right: 10px;  }
+
+.LineNodeBlock {margin: 10px 0 10px 0;}
+.LineNodeBlock+.paragraphNode {margin-top: 10px;}
+.lineNode {padding-left: 10px; background-color: #F7F7F7; border-left: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.inlineWrapper:first-child .lineNode,.inlineWrapper.outputs+.inlineWrapper .lineNode {padding-top: 5px; border-top: 1px solid #E9E9E9;}
+.inlineWrapper:last-child .lineNode,.inlineWrapper.outputs .lineNode {padding-bottom: 5px; border-bottom: 1px solid #E9E9E9;}
+.lineNode .textBox {white-space: pre;}
+.outputGroup {margin: 2px 0 2px 0; padding: 2px 2px 2px 4px;}
+.outputRegion {}
+.outputParagraph {color: rgba(64, 64, 64, 1); padding: 10px 0 6px 17px; background: white; overflow-x: hidden;}
+.inlineWrapper:last-child .outputParagraph {border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;}
+.outputParagraph:empty {margin: 0;}
+.inlineElement .symbolicElement {margin-top: 1px; margin-bottom: 1px;}
+.embeddedOutputsSymbolicElement .MathEquation {margin-top: 4px; margin-bottom: 4px;}
+.embeddedOutputsSymbolicElement .MathEquation.displaySymbolicElement {margin-left: 15px;}
+.embeddedOutputsSymbolicElement .MathEquation.inlineSymbolicElement {margin-left: 5px;}
+.embeddedOutputsSymbolicElement {overflow-x: auto; overflow-y: hidden;}
+.embeddedOutputsSymbolicElement { overflow: initial !important;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {font-family: Consolas, Inconsolata, Menlo, monospace; font-size: 12px; white-space: pre; word-wrap: initial; min-height: 18px; max-height: 250px; overflow: auto;}
+.textElement {padding-top: 3px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement { max-height: none !important; overflow: initial !important;}
+.veSpecifier {}
+.veContainer {}
+.veSpecifierBox {height: 400px; width: 500px;}
+.veSpecifier .veTable {padding-top: 3px; padding-bottom: 4px;}
+.veSpecifierBox .veSpecifier .veContainer {position: relative; width: 100%; height: 370px;}
+.veSpecifierBox .dijitDialogPaneContent {width: 97% !important; height: 88% !important;}
+.veSpecifier .veTable .rowHeadersWrapper {padding-bottom: 0;}
+.veSpecifier .veTable .scroller .variableEditorRenderers {padding-right: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;}
+.veVariableValueSummary {display: inline-block;}
+.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper {visibility: hidden; z-index: 0;}
+.veMetaSummary {font-style: italic;}
+.veSpecifier .veTable .scroller {overflow: hidden;}
+.veSpecifier .veTable:hover .scroller {overflow: auto;}
+.veSpecifier .veVariableName,.veSpecifier .veDimensionFont {font-family: Consolas, Inconsolata, Menlo, monospace; font-size: 12px;}
+.veSpecifier .veVariableName {padding-top: 2px;}
+.veSpecifier .veDimensionFont {font-style: italic; color: #9A9A9A;}
+.veSpecifier .scroller::-webkit-scrollbar-track {background-color: white;}
+.veSpecifier .scroller::-webkit-scrollbar-corner {background-color: white;}
+.veSpecifier .veTable .topRowHeaderWrapper {border: none; background-color: #F8F9FA;}
+.veSpecifier .mw_type_ListBase.showCellBorders,.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper,.veSpecifier .veTable .verticalScrollSpacer,.veSpecifier .veTable .horizontalScrollSpacer {border: none;}
+.veSpecifier .veTable .dataScrollerNode {border: 1px solid #BFBFBF;}
+.veSpecifier .veTable .columnHeaderNode,.veSpecifier .veTable .rowHeaderNode,.veSpecifier .veTable .dataBody {font-family: Arial; font-size: 13px;}
+.veSpecifier .veTable .columnHeaderNode,.veSpecifier .veTable .rowHeaderNode {color: #7F7F7F;}
+.veSpecifier .veTable .dataBody {color: #000000;}
+.veSpecifier .veTable .columnHeaderNode .cell .drag,.veSpecifier .veTable .columnHeaderNode .cell .header,.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper {background-color: #F8F9FA;}
+.veSpecifier .veTable .columnHeaderNode .cell .dragBorder {border-right: 1px solid #F8F9FA;}
+.veSpecifier .veTable .rowHeaderNode .cell {padding-top: 3px; text-align: center; border-bottom: 1px solid #F8F9FA;}
+.veSpecifier .veTable .dataBody .cell .plainText {text-align: right;}
+.veSpecifier .veTable .dataBody .row .cell {border-bottom: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.embeddedOutputsVariableElement {font-family: Consolas, Inconsolata, Menlo, monospace; font-size: 12px; white-space: pre-wrap; word-wrap: break-word; min-height: 18px; max-height: 250px; overflow: auto;}
+.variableElement {}
+.embeddedOutputsVariableElement.inlineElement {}
+.inlineElement .variableElement {}
+.variableValue { width: 100% !important; }
+.embeddedOutputsMatrixElement {min-height: 18px; box-sizing: border-box; font-family: Consolas, Inconsolata, Menlo, monospace; font-size: 12px;}
+.embeddedOutputsMatrixElement .matrixElement{position: relative;}
+.matrixElement .variableValue {white-space: pre; display: inline-block; vertical-align: top; overflow: hidden;}
+.embeddedOutputsMatrixElement.inlineElement {}
+.embeddedOutputsMatrixElement.inlineElement .topHeaderWrapper {display: none;}
+.embeddedOutputsMatrixElement.inlineElement .veTable .body {padding-top: 0 !important; max-height: 100px;}
+.embeddedOutputsMatrixElement.inlineElement .veVariableName {padding-top: 0;}
+.inlineElement .matrixElement {max-height: 300px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer {white-space: nowrap; padding-top: 10px; margin-bottom: 3px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis.hide,.embeddedOutputsMatrixElement .matrixElement .verticalEllipsis.hide {display: none;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis {margin-bottom: -3px;}
+.matrixElement { max-height: none !important; }
+.dijitTooltipDialog .dijitTooltipContainer .dijitTooltipContents .alertPlugin-alertMessage {min-width: 12px; max-width: 400px; max-height: 300px; overflow: auto;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar {width: 11px; height: 11px;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-corner {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {border-radius: 7px; background-color: rgba(0, 0, 0, 0.1); border: 2px solid rgba(0, 0, 0, 0); background-clip: padding-box;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.2);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.1);}
+.dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.2);}
+.alertPlugin-alertLine {position: absolute; display: initial; width: 40px; text-align: right; cursor: text;}
+.alertPlugin-onTextLine {visibility: hidden;}
+.alertPlugin-hasTooltip .alertPlugin-warningImg,.alertPlugin-hasTooltip .alertPlugin-errorImg {cursor: pointer;}
+.alertPlugin-alertLine .alertPlugin-warningElement,.alertPlugin-alertLine .alertPlugin-errorElement {display: inline-block; margin-right: 4px;}
+.alertPlugin-isStale {-webkit-filter: opacity(0.4) grayscale(80%); filter: opacity(0.4) grayscale(80%);}
+.diagnosticMessage-wrapper {font-family: Consolas, Inconsolata, Menlo, monospace; font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {color: rgb(255,100,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {color: rgb(255,100,0); text-decoration: underline;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {color: rgb(230,0,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {color: rgb(230,0,0); text-decoration: underline;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart {white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {white-space: pre;}
+.embeddedOutputsWarningElement{min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsErrorElement {min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+</style></head><body><div class = "content"><div class = 'SectionBlock containment active'><h1 class = "S1"><span class = "S2">Day - 1</span></h1><h2 class = "S3"><span class = "S2">Variable declaration</span></h2><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">a = 1             </span><span class = "S7">% MATLAB automatically defines variables as double</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableElement" uid="0017DB51" data-testid="output_0" style="width: 1500px;"><div class="variableElement">a = 1</div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">b = 4.323</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableElement" uid="38094885" data-testid="output_1" style="width: 1500px;"><div class="variableElement">b = 4.3230</div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">c = [1,2,3,4,5.5]   </span><span class = "S7">% A row vector (list) of double. Dimension 1 x 5 (row, column)</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsMatrixElement" uid="73CCB526" data-testid="output_2" style="width: 1500px;"><div class="matrixElement veSpecifier"><div class="veVariableName"><span>c = </span><span class="veVariableValueSummary veMetaSummary"></span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:72.5,&quot;totalColumns&quot;:5,&quot;totalRows&quot;:1,&quot;charsPerColumn&quot;:10}"><div class="variableValue" style="width: 364.5px;">    1.0000    2.0000    3.0000    4.0000    5.5000
+</div><div class="horizontalEllipsis hide"></div><div class="verticalEllipsis hide"></div></div></div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">d = [1;2.3;3;4;5]   </span><span class = "S7">% A column vector (list) of double. Dimension 5 x 1 (row, column)</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsMatrixElement" uid="865F75C5" data-testid="output_3" style="width: 1500px;"><div class="matrixElement veSpecifier"><div class="veVariableName"><span>d = </span><span class="veVariableValueSummary veMetaSummary"></span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:72.5,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:5,&quot;charsPerColumn&quot;:10}"><div class="variableValue" style="width: 74.5px;">    1.0000
+    2.3000
+    3.0000
+    4.0000
+    5.0000
+</div><div class="horizontalEllipsis hide"></div><div class="verticalEllipsis hide"></div></div></div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">e</span><span class = "S6"> = </span><span class = "S10">'a'</span><span class = "S6">             </span><span class = "S7">% Character</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableStringElement" uid="DA6FDBA1" data-testid="output_4" data-width="1470" style="width: 1500px;"><div class="textElement"><div>e = a</div></div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">f = </span><span class = "S10">'string'</span><span class = "S6">        </span><span class = "S7">% A vector of characters</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableStringElement" uid="3DF0F993" data-testid="output_5" data-width="1470" style="width: 1500px;"><div class="textElement"><div>f = string</div></div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">g = true</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableStringElement" uid="48D7C418" data-testid="output_6" data-width="1470" style="width: 1500px;"><div class="textElement"><div>g = </div><div>&nbsp;&nbsp; 1<br><br></div></div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">e = false</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableStringElement" uid="A984CEFF" data-testid="output_7" data-width="1470" style="width: 1500px;"><div class="textElement"><div>e = </div><div>&nbsp;&nbsp; 0<br><br></div></div></div></div></div></div><h2 class = "S3"><span class = "S2">Print variables</span></h2><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S7">% Print using disp</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">disp(a);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="3D9ED375" data-testid="output_8" data-width="1470" style="width: 1500px;"><div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp; 1</div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">disp(b);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="D53E0AD6" data-testid="output_9" data-width="1470" style="width: 1500px;"><div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp;4.3230</div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">disp(c);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="AE06487E" data-testid="output_10" data-width="1470" style="width: 1500px;"><div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp;1.0000&nbsp;&nbsp;&nbsp;&nbsp;2.0000&nbsp;&nbsp;&nbsp;&nbsp;3.0000&nbsp;&nbsp;&nbsp;&nbsp;4.0000&nbsp;&nbsp;&nbsp;&nbsp;5.5000</div></div></div></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">disp(d);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="DF7E4BD4" data-testid="output_11" data-width="1470" style="width: 1500px;"><div class="textElement">&nbsp;&nbsp;&nbsp;&nbsp;1.0000<br>&nbsp;&nbsp;&nbsp;&nbsp;2.3000<br>&nbsp;&nbsp;&nbsp;&nbsp;3.0000<br>&nbsp;&nbsp;&nbsp;&nbsp;4.0000<br>&nbsp;&nbsp;&nbsp;&nbsp;5.0000</div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S7">% Using fprintf (%d denotes a decimal, %f denotes a float, %c denotes a charater and %s a string)</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">fprintf(</span><span class = "S10">'a = %d, b = %f, d = %c and e = %s'</span><span class = "S9">, a, b, e, f);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="27E96FBA" data-testid="output_12" data-width="1470" style="width: 1500px;"><div class="textElement">a = 1, b = 4.323000, d =&nbsp;&nbsp; and e = string</div></div></div></div></div><h2 class = "S3"><span class = "S2">Conditional statements</span></h2><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">if </span><span class = "S9">g</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    disp(</span><span class = "S10">'g is true!'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S12">end</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="C99DD326" data-testid="output_13" data-width="1470" style="width: 1500px;"><div class="textElement">g is true!</div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">if </span><span class = "S9">e</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    disp</span><span class = "S6">(</span><span class = "S10">'e is true'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12">else</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    disp(</span><span class = "S10">'e is false'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S12">end</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="42A59400" data-testid="output_14" data-width="1470" style="width: 1500px;"><div class="textElement">e is false</div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">if </span><span class = "S9">a==1</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    disp(</span><span class = "S10">'a is one'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S12">end</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="B750E3E7" data-testid="output_15" data-width="1470" style="width: 1500px;"><div class="textElement">a is one</div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">if </span><span class = "S9">b ~= 1</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    disp(</span><span class = "S10">'b is not one'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S12">end</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="963ACFB5" data-testid="output_16" data-width="1470" style="width: 1500px;"><div class="textElement">b is not one</div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">switch </span><span class = "S9">a</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S11">case </span><span class = "S9">1</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">        disp(</span><span class = "S10">'a is one'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S11">case </span><span class = "S9">0</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">        disp(</span><span class = "S10">'a is zero'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S12">otherwise</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">        disp(</span><span class = "S10">'a is not one or zero'</span><span class = "S9">);</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S12">end</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="09E30CFA" data-testid="output_17" data-width="1470" style="width: 1500px;"><div class="textElement">a is one</div></div></div></div></div><h2 class = "S3"><span class = "S2">Find max of a list (solution - 1; code for algorithm in pdf)</span></h2><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">number_list = [841238 619645 209407 435618 832714 887185 164080 939827 179879 517613];</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">max = 0</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableElement" uid="38464484" data-testid="output_18" style="width: 1500px;"><div class="variableElement">max = 0</div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">for </span><span class = "S9">curr_num = number_list</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S11">if </span><span class = "S9">curr_num&gt;max</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">        max = curr_num;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12"></span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">fprintf(</span><span class = "S10">'Current number is %d'</span><span class = "S9">, max);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="F563AB29" data-testid="output_19" data-width="1470" style="width: 1500px;"><div class="textElement">Current number is 939827</div></div></div></div></div><h2 class = "S3"><span class = "S2">A better max finding solution</span></h2><p class = "S13"><span class = "S2">The above method does not work for negative numbers. Below one will work for all real numbers.</span></p><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">number_list = [-630 -260 -298 -538 -176 -596 -23 -693 -791 -271];</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">max = number_list(1);</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">for </span><span class = "S9">curr_num = number_list</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S11">if </span><span class = "S9">curr_num&gt;max</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">        max = curr_num;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12"></span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S6">fprintf(</span><span class = "S10">'Current number is %d'</span><span class = "S9">, max);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="EE62A7C9" data-testid="output_20" data-width="1470" style="width: 1500px;"><div class="textElement">Current number is -23</div></div></div></div></div><h2 class = "S3"><span class = "S2">Is the given number n a prime number?</span></h2><p class = "S13"><span class = "S2">Brute force way of solving it.</span></p><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">number = 43.</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsVariableElement" uid="739FCF06" data-testid="output_21" style="width: 1500px;"><div class="variableElement">number = 43</div></div></div></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">divisors = 2:number-1;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S7">% assume prime</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">prime = true;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S7"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">for </span><span class = "S9">curr_divisor = divisors</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S11">if </span><span class = "S9">mod(number, curr_divisor) == 0</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">        prime = false;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">        </span><span class = "S11">break</span><span class = "S9">;    </span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">if </span><span class = "S9">prime</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    fprintf(</span><span class = "S10">'%d is prime'</span><span class = "S9">, number);</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12">else</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    fprintf(</span><span class = "S10">'%d is not prime'</span><span class = "S9">, number);</span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S12">end</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement" uid="A4547B5C" data-testid="output_22" data-width="1470" style="width: 1500px;"><div class="textElement">43 is prime</div></div></div></div></div><h2 class = "S3"><span class = "S2">Find the first 100 prime numbers</span></h2><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">prime_numbers = [];        </span><span class = "S7">% Starting with an empty vector</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">curr_number = 2;    </span><span class = "S7">% Starting number</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S7"></span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">while</span><span class = "S6">(length(prime_numbers) &lt;= 100)    </span><span class = "S7">% Keep running until number of primes is 100</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S7">% Copy the above code (careful with the variable names)</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">    divisors = 2:curr_number-1;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">    </span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S7">% assume prime</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">    prime = true;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">    </span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S11">for </span><span class = "S9">curr_divisor = divisors</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">        </span><span class = "S11">if </span><span class = "S9">mod(curr_number, curr_divisor) == 0</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">            prime = false;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">            </span><span class = "S11">break</span><span class = "S9">;</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S11">   </span><span class = "S9"> end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">   </span><span class = "S9"> end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">    </span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S11">   </span><span class = "S9"> if prime</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">        </span><span class = "S6">prime_numbers</span><span class = "S9"> = [prime_numbers, curr_number];</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S6">    </span><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">    </span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9">    curr_number = curr_number + 1;    </span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S12">end</span></p></div><div class = 'inlineWrapper'><p class = "S5 lineNode"><span class = "S9"></span></p></div><div class = 'inlineWrapper outputs'><p class = "S5 lineNode"><span class = "S9">disp(prime_numbers);</span></p><div class="outputParagraph"><div class="inlineElement embeddedOutputsTextElement scrollableOutput" uid="2CDF26BC" data-testid="output_23" data-width="1470" style="width: 1500px; max-height: 392px;"><div class="textElement">&nbsp;&nbsp;Columns 1 through 15<br><br>&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;&nbsp;&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;23&nbsp;&nbsp;&nbsp;&nbsp;29&nbsp;&nbsp;&nbsp;&nbsp;31&nbsp;&nbsp;&nbsp;&nbsp;37&nbsp;&nbsp;&nbsp;&nbsp;41&nbsp;&nbsp;&nbsp;&nbsp;43&nbsp;&nbsp;&nbsp;&nbsp;47<br><br>&nbsp;&nbsp;Columns 16 through 30<br><br>&nbsp;&nbsp;&nbsp;&nbsp;53&nbsp;&nbsp;&nbsp;&nbsp;59&nbsp;&nbsp;&nbsp;&nbsp;61&nbsp;&nbsp;&nbsp;&nbsp;67&nbsp;&nbsp;&nbsp;&nbsp;71&nbsp;&nbsp;&nbsp;&nbsp;73&nbsp;&nbsp;&nbsp;&nbsp;79&nbsp;&nbsp;&nbsp;&nbsp;83&nbsp;&nbsp;&nbsp;&nbsp;89&nbsp;&nbsp;&nbsp;&nbsp;97&nbsp;&nbsp; 101&nbsp;&nbsp; 103&nbsp;&nbsp; 107&nbsp;&nbsp; 109&nbsp;&nbsp; 113<br><br>&nbsp;&nbsp;Columns 31 through 45<br><br>&nbsp;&nbsp; 127&nbsp;&nbsp; 131&nbsp;&nbsp; 137&nbsp;&nbsp; 139&nbsp;&nbsp; 149&nbsp;&nbsp; 151&nbsp;&nbsp; 157&nbsp;&nbsp; 163&nbsp;&nbsp; 167&nbsp;&nbsp; 173&nbsp;&nbsp; 179&nbsp;&nbsp; 181&nbsp;&nbsp; 191&nbsp;&nbsp; 193&nbsp;&nbsp; 197<br><br>&nbsp;&nbsp;Columns 46 through 60<br><br>&nbsp;&nbsp; 199&nbsp;&nbsp; 211&nbsp;&nbsp; 223&nbsp;&nbsp; 227&nbsp;&nbsp; 229&nbsp;&nbsp; 233&nbsp;&nbsp; 239&nbsp;&nbsp; 241&nbsp;&nbsp; 251&nbsp;&nbsp; 257&nbsp;&nbsp; 263&nbsp;&nbsp; 269&nbsp;&nbsp; 271&nbsp;&nbsp; 277&nbsp;&nbsp; 281<br><br>&nbsp;&nbsp;Columns 61 through 75<br><br>&nbsp;&nbsp; 283&nbsp;&nbsp; 293&nbsp;&nbsp; 307&nbsp;&nbsp; 311&nbsp;&nbsp; 313&nbsp;&nbsp; 317&nbsp;&nbsp; 331&nbsp;&nbsp; 337&nbsp;&nbsp; 347&nbsp;&nbsp; 349&nbsp;&nbsp; 353&nbsp;&nbsp; 359&nbsp;&nbsp; 367&nbsp;&nbsp; 373&nbsp;&nbsp; 379<br><br>&nbsp;&nbsp;Columns 76 through 90<br><br>&nbsp;&nbsp; 383&nbsp;&nbsp; 389&nbsp;&nbsp; 397&nbsp;&nbsp; 401&nbsp;&nbsp; 409&nbsp;&nbsp; 419&nbsp;&nbsp; 421&nbsp;&nbsp; 431&nbsp;&nbsp; 433&nbsp;&nbsp; 439&nbsp;&nbsp; 443&nbsp;&nbsp; 449&nbsp;&nbsp; 457&nbsp;&nbsp; 461&nbsp;&nbsp; 463<br><br>&nbsp;&nbsp;Columns 91 through 101<br><br>&nbsp;&nbsp; 467&nbsp;&nbsp; 479&nbsp;&nbsp; 487&nbsp;&nbsp; 491&nbsp;&nbsp; 499&nbsp;&nbsp; 503&nbsp;&nbsp; 509&nbsp;&nbsp; 521&nbsp;&nbsp; 523&nbsp;&nbsp; 541&nbsp;&nbsp; 547</div></div></div></div></div><p class = "S14"><span class = "S2">There are smarter ways of doing this. Try it out.</span></p></div></div>
+<!-- 
 ##### SOURCE BEGIN #####
 %% Day - 1
 %% Variable declaration
@@ -948,8 +174,80 @@ switch a
     otherwise
         disp('a is not one or zero');
 end
-##### SOURCE END #####
--->
-</body>
+%% Find max of a list (solution - 1; code for algorithm in pdf)
 
-</html>
+number_list = [841238 619645 209407 435618 832714 887185 164080 939827 179879 517613];
+max = 0
+
+for curr_num = number_list
+    if curr_num>max
+        max = curr_num;
+    end
+end
+
+fprintf('Current number is %d', max);
+%% A better max finding solution
+% The above method does not work for negative numbers. Below one will work for 
+% all real numbers.
+
+number_list = [-630 -260 -298 -538 -176 -596 -23 -693 -791 -271];
+max = number_list(1);
+
+for curr_num = number_list
+    if curr_num>max
+        max = curr_num;
+    end
+end
+
+fprintf('Current number is %d', max);
+%% Is the given number n a prime number?
+% Brute force way of solving it.
+
+number = 43.
+divisors = 2:number-1;
+% assume prime
+prime = true;
+
+for curr_divisor = divisors
+    if mod(number, curr_divisor) == 0
+        prime = false;
+        break;    
+    end
+end
+
+if prime
+    fprintf('%d is prime', number);
+else
+    fprintf('%d is not prime', number);
+end
+%% Find the first 100 prime numbers
+
+prime_numbers = [];        % Starting with an empty vector
+curr_number = 2;    % Starting number
+
+while(length(prime_numbers) <= 100)    % Keep running until number of primes is 100
+    % Copy the above code (careful with the variable names)
+    divisors = 2:curr_number-1;
+    
+    % assume prime
+    prime = true;
+    
+    for curr_divisor = divisors
+        if mod(curr_number, curr_divisor) == 0
+            prime = false;
+            break;
+        end
+    end
+    
+    if prime
+        prime_numbers = [prime_numbers, curr_number];
+    end
+    
+    curr_number = curr_number + 1;    
+end
+
+disp(prime_numbers);
+%% 
+% There are smarter ways of doing this. Try it out.
+##### SOURCE END #####
+--></body></html>
