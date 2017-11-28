@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Course Material</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+</head>
+
+<body>
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html"
+           class="brand-logo">Workshop17</a>
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a href="../schedule.html">Schedule</a>
+            </li>
+            <li>
+                <a href="https://goo.gl/N4ogkF">Suggest</a>
+            </li>
+            <li>
+                <a href="../environment.html">Environmental Setup</a>
+            </li>
+            <li>
+                <a href="../material.html">Course Material</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li>
+                <a href="../schedule.html">Schedule</a>
+            </li>
+            <li>
+                <a href="https://goo.gl/N4ogkF">Suggest</a>
+            </li>
+            <li>
+                <a href="../environment.html">Environmental Setup</a>
+            </li>
+            <li>
+                <a href="../material.html">Course Material</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+    </div>
+</div>
+
+
+<body>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <h4>Day 2</h4> After quick recap from previous day, we learned
+            Python functions, file Input/Output and basic data plotting.
+            <h5>Functions</h5>
+            They are very useful in any programming language. These are ideally
+            blocks of code which you can
+            use repetitively. For example, following simple function will print
+            "hello there!".
+            <blockquote>
+                def say_hello():<br>
+                &emsp; print("hello there!")
+            </blockquote>
+            In above example, <b>def</b> is reserved keyword to define function
+            in Python. <b>say_hello</b> is
+            the function name. Also notice two brackets and colon in front of
+            function name. That is way of defining function. Brackets
+            are useful in passing some argument in our function. After that,
+            you can write your logic. To use this function in our code, we can
+            use it's name.
+            <blockquote>
+                say_hello()
+            </blockquote>
+            Remember to put two brackets in front of function name while
+            calling it in your code.<br>
+            Now we will pass some argument to our function. Arguments are
+            variables which you can use
+            inside your function.
+            <blockquote>
+                def say_hello_by_name(name):<br>
+                &emsp; print("hello %s!"%name)
+            </blockquote>
+            In above example, <b>name</b> is an argument which we will pass on
+            to our function. In Python,
+            you can pass any number and any kinds of arguments into the
+            function.
+            <blockquote>
+                say_hello_by_name("Rohit") #This will print "hello Rohit!" <br>
+                say_hello_by_name("Guest") #This will print "hello Guest!"
+            </blockquote>
+            You can also return some value from the function. Way to do is to
+            use <b>return</b> keyword.
+            <blockquote>
+                def add_numbers(num1, num2):<br>
+                &emsp; return num1 + num2
+            </blockquote>
+            In above example, <b>add_numbers</b> function takes two arguments
+            <b>num1</b> and <b>num2</b>
+            and returns addition of them.
+            <blockquote>
+                k = add_numbers(2,3) <br>
+                print(k) # Prints 5 <br>
+                print(add_numbers(10,10)) # Prints 20
+            </blockquote>
+            Important thing to remember is that <b>return</b> statement should
+            should be ALWAYS at the
+            end of function. Any sentences written after <b>return</b> keyword
+            will NOT be executed.
+            <h5>File I/O</h5>
+            Many cases you have to work will multiple data files. You need to
+            analyze and visualize data stored
+            inside them. With the help of Python you can very easily achieve
+            this. Here we will specifically
+            look at simple text based files. To handle specialize file formats
+            like "xls", we need some special
+            packages which we will look at next week. Simplest way to read any
+            file inside python can be done in following way,
+            <blockquote>
+                with open("filename.txt", "r") as file_variable:<br>
+                &emsp; print(file_variable.read())
+            </blockquote>
+            In any programming language, one has to open file first, then do
+            our task and then close it.
+            In Python, you can do opening and closing automatically with the
+            help of <b>with</b> command.
+            In above example, program will open <b>filename.txt</b> file and
+            print its content. Notice <b>r</b> after
+            name of file. That is called mode of file handling. Here <b>r</b>
+            represents read mode. You can see
+            <a href="https://stackoverflow.com/a/23566951/5284595"
+               target="_blank">here</a> to know about available modes and what
+            do they do. You can also open in default mode by not specifying any
+            mode. Once we open our file, we have to assign some variable which
+            we can use as file content. In above example <b>file_variable</b>
+            is that variable. <b>file_variable.read()</b> will read all file
+            content. If you want to read entire file line by line,
+            you can do something like following,
+            <blockquote>
+                with open("filename.txt", "r") as file_variable:<br>
+                &emsp; for line in file_variable: <br>
+                &emsp;&emsp; print(line)
+            </blockquote>
+            <h5>Basic Plotting</h5>
+            Data visualization is important aspect of our research. Python
+            provides very flexible ways to plot and visualize your data. For
+            that we will be using python's <b>matplotlib</b> library.
+            If you do not have it , please check <a
+                href="https://matplotlib.org/users/installing.html"
+                target="_blank">here</a> for the instructions. You can use it
+            like following way
+
+            <blockquote>
+                import matplotlib.pylab as plt # Import library<br>
+                x = [2,3,4] # Sample data <br>
+                y = [10,2,3] # Sample data <br>
+                plt.scatter(x,y) # This will create scatter plot of x and y
+                <br>
+                plt.savefig("filename.png", format="png") # Save plot to file
+                <br>
+                plt.show() # Opens plot
+            </blockquote>
+            This is very powerful library in python. You can read more about
+            this and few
+            basic examples of different kinds of plots <a
+                href="https://matplotlib.org/tutorials/index.html#introductory"
+                target="_blank">here</a>.
+            <h5>Exercise Examples</h5> Following is the list of examples we
+            coded in our Day 2 of workshop. Click on the link to see full code.
+            <ul class="collection">
+
+                <li class="collection-item">
+                    <a href="https://github.com/NCBS-students/Workshop2017/blob/master/material/Python/day2_functions.py"
+                       target="_blank">
+                        Functions</a>
+                </li>
+                <li class="collection-item">
+                    <a href="https://github.com/NCBS-students/Workshop2017/blob/master/material/Python/day2_file_io.py"
+                       target="_blank">
+                        File Input/Output</a>
+                </li>
+                <li class="collection-item">
+                    <a href="https://github.com/NCBS-students/Workshop2017/blob/master/material/Python/day2_plotting.py"
+                       target="_blank">
+                        Plotting Iris Dataset</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+</div>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+
+</html>
