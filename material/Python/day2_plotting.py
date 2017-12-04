@@ -15,7 +15,7 @@ sepal_width = []
 petal_length = []
 petal_width = []
 
-with open("iris.data", "r") as f:
+with open("iris.data") as f:
     # We will read content line by line
     for line in f:
         # Split line by comma. And make list
